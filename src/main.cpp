@@ -1,5 +1,3 @@
-#include <iostream>
-
 #include "engine/cli.h"
 
 int main(int argv, char **argc)

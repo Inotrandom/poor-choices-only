@@ -3,7 +3,6 @@
 
 #include <string>
 #include <iostream>
-#include <sstream>
 
 #include "strutils.h"
 
@@ -35,7 +34,7 @@ public:
 
 	auto user_confirms() -> bool
 	{
-		std::cout << "Please indicate \"Y\" to continue, or press \"ENTER\" to return" << std::endl;
+		std::cout << "Please indicate \"Y\" to confirm, or press \"ENTER\" to return" << std::endl;
 
 		std::string buf;
 		std::getline(std::cin, buf);
