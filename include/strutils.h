@@ -104,4 +104,9 @@ inline void string_trim(std::string &s)
 	string_ltrim(s);
 }
 
+inline void string_lower(std::string &s)
+{
+	std::transform(s.cbegin(), s.cend(), s.begin(), [](char c) { return std::tolower(c); });
+}
+
 #endif // H_STR_UTILS
